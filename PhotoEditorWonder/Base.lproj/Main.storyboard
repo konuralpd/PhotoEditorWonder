@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7F-Pd-CIS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoEditorWonder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add-photo" translatesAutoresizingMaskIntoConstraints="NO" id="GZF-fV-UPt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OPR-Qf-ngQ">
+                                <rect key="frame" x="20" y="720" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="5Wy-OE-fN1"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" systemColor="systemGreenColor"/>
+                                <color key="thumbTintColor" systemColor="systemGreenColor"/>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf6-bY-Gfk">
+                                <rect key="frame" x="25" y="780" width="115" height="72"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="filter" title="Filtre">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RgO-Kj-93j">
+                                <rect key="frame" x="326" y="801" width="69" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet">
+                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nf6-bY-Gfk" firstAttribute="top" secondItem="OPR-Qf-ngQ" secondAttribute="bottom" constant="31" id="8RF-mZ-lHj"/>
+                            <constraint firstItem="OPR-Qf-ngQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="2" id="APA-6w-BA1"/>
+                            <constraint firstItem="GZF-fV-UPt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="L4V-l7-FEc"/>
+                            <constraint firstItem="GZF-fV-UPt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Qgt-ex-tdZ"/>
+                            <constraint firstItem="OPR-Qf-ngQ" firstAttribute="centerX" secondItem="GZF-fV-UPt" secondAttribute="centerX" id="TVX-pw-RZa"/>
+                            <constraint firstItem="Nf6-bY-Gfk" firstAttribute="top" secondItem="OPR-Qf-ngQ" secondAttribute="bottom" constant="31" id="d4u-uq-bQP"/>
+                            <constraint firstAttribute="trailing" secondItem="RgO-Kj-93j" secondAttribute="trailing" constant="19" id="dUi-aQ-LBW"/>
+                            <constraint firstAttribute="bottom" secondItem="GZF-fV-UPt" secondAttribute="bottom" id="fnv-3y-57Q"/>
+                            <constraint firstItem="Nf6-bY-Gfk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="h4z-SB-4d4"/>
+                            <constraint firstItem="RgO-Kj-93j" firstAttribute="top" secondItem="OPR-Qf-ngQ" secondAttribute="bottom" constant="52" id="mvf-81-sOB"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Nf6-bY-Gfk" secondAttribute="bottom" constant="44" id="urC-7Z-Aex"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OPR-Qf-ngQ" secondAttribute="trailing" constant="2" id="vEK-Yy-uOu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="sH6-oq-8Pd">
+                        <barButtonItem key="leftBarButtonItem" title="Ekle" image="add" id="Loq-dY-iIP">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="X69-5b-Pg7">
+                                <rect key="frame" x="20" y="0.0" width="156.5" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="add" title="Fotoğraf Seç">
+                                    <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                </buttonConfiguration>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addFilterButton" destination="Nf6-bY-Gfk" id="4Jk-6j-sBx"/>
+                        <outlet property="chooseImageButton" destination="X69-5b-Pg7" id="h1D-3q-1m5"/>
+                        <outlet property="filtreSlider" destination="OPR-Qf-ngQ" id="keM-Hn-2Lf"/>
+                        <outlet property="imageView" destination="GZF-fV-UPt" id="AMx-Cu-ohK"/>
+                        <outlet property="kaydetButton" destination="RgO-Kj-93j" id="3lD-Li-u0Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="928.98550724637687" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X9Q-wn-TRd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f7F-Pd-CIS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KRM-Qb-aMA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="VgV-ep-e7b"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22Z-h1-RNE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add" width="32" height="32"/>
+        <image name="add-photo" width="450" height="450"/>
+        <image name="filter" width="58" height="58"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
